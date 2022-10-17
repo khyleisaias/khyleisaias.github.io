@@ -1,7 +1,11 @@
-function print() {
-    document.getElementById("p").innerText = "Hi, I miss u."
+function print(x) {
+    document.getElementById("p").innerText = x
 }
 
 while (document.activeElement) {
     console.log(document.activeElement)
+}
+function letssee() {
+    var see = document.getElementById("infobox").value
+    print(see)
 }
