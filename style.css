@@ -5,4 +5,7 @@ h1, p {
     color: white;
     font-family: Arial;
 }
-
+form.inputbox {
+    border: #181818 solid;
+    background-color: #181818;
+}
