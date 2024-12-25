@@ -1,11 +1,18 @@
 body {
-    background-color: #181818;
+    background-color: #bb2528;
 }
-h1, p {
+
+#header1 {
+    font-family: "Arial";
     color: white;
-    font-family: Arial;
 }
-form.inputbox {
-    border: #181818 solid;
-    background-color: #181818;
+
+#par1 {
+    font-family: "Arial";
+    color: white;
+    font-size: 60px;
+}
+
+mark {
+    background-color: #f8b229;
 }
