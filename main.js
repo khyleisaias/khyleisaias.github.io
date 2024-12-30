@@ -13,12 +13,23 @@ function isChristmas(mm, dd, yy) {
         if (dd < 25) {
             document.getElementById("header1").innerText = `Date today is ${mm}-${dd}-${yy}`
             document.getElementById("par1").innerHTML = `Not yet Christmas<br><br>Still <mark>${25 - dd} day/s</mark> before Christmas`     
+        } else if (dd == 31) {
+            document.getElementById("header1").innerText = `Date today is ${mm}-${dd}-${yy}`
+            document.getElementById("par1").innerText = `${yy + 1} is coming...`
         } else if (dd > 25) {
             document.getElementById("header1").innerText = `Date today is ${mm}-${dd}-${yy}`
             document.getElementById("par1").innerText = "Christmas has passed"
         } else {
             document.getElementById("header1").innerText = `Date today is ${mm}-${dd}-${yy}`
             document.getElementById("par1").innerText = "It's Christmas!!\nMerry Christmas to you!!"
+        }
+    } else if (mm == 1) {
+        if (dd == 1) {
+            document.getElementById("header1").innerText = `Date today is ${mm}-${dd}-${yy}`
+            document.getElementById("par1").innerText = "Happy New Year!!!"
+        } else {
+            document.getElementById("header1").innerText = `Date today is ${mm}-${dd}-${yy}`
+            document.getElementById("par1").innerText = "New Year has passed"
         }
     } else {
         document.getElementById("header1").innerText = `Date today is ${mm}-${dd}-${yy}` 
